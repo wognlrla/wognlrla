@@ -3,21 +3,28 @@
 **드론 · AI · 서버를 하나의 서비스로 잇는 백엔드 개발자**입니다.
 Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝까지 맞게 흐르도록 설계하는 일을 좋아합니다.
 
-- 🤝 **함께 만드는 사람**: 팀의 서비스 경계와 API 규격을 먼저 맞추고, 결정은 문서로 남깁니다.
-- 🚀 **새 기술을 두려워하지 않는 사람**: MQTT · DL4J · Spring AI(MCP) · 공간 DB까지, 필요하면 바로 배워 씁니다.
-- ⏱️ **마감 안에 완성하는 사람**: 리뷰할 수 있는 단위로 PR을 나눠 정해진 시간 안에 끝냅니다.
+- **함께 만드는 사람**: 팀의 서비스 경계와 API 규격을 먼저 맞추고, 결정은 문서로 남깁니다.
+- **새 기술을 두려워하지 않는 사람**: MQTT · DL4J · Spring AI(MCP) · 공간 DB까지, 필요하면 바로 배워 씁니다.
+- **마감 안에 완성하는 사람**: 리뷰할 수 있는 단위로 PR을 나눠 정해진 시간 안에 끝냅니다.
 
 ## 포트폴리오
 
-<a href="portfolio/saferoute-portfolio.pdf"><img src="portfolio/cover.png" width="640" alt="세잎지도 프로젝트 포트폴리오 표지"></a>
-
-**[📄 세잎지도 프로젝트 포트폴리오 (PDF, 12쪽)](portfolio/saferoute-portfolio.pdf)**: 문제와 목표 · 데이터 구조 · 트러블슈팅 · 현장 검증 · 협업
+<table>
+<tr>
+<td width="50%"><a href="portfolio/saferoute-portfolio.pdf"><img src="portfolio/cover.png" alt="세잎지도 프로젝트 포트폴리오 표지"></a></td>
+<td width="50%"><a href="portfolio/backend-portfolio.pdf"><img src="portfolio/backend-cover.png" alt="백엔드 개발자 포트폴리오 표지"></a></td>
+</tr>
+<tr>
+<td><b><a href="portfolio/saferoute-portfolio.pdf">세잎지도 프로젝트 포트폴리오</a></b> (PDF, 12쪽)<br>문제와 목표 · 데이터 구조 · 트러블슈팅 · 현장 검증 · 협업</td>
+<td><b><a href="portfolio/backend-portfolio.pdf">백엔드 개발자 포트폴리오</a></b> (PDF, 11쪽)<br>InsightOn · Mini Dooray — 구조 · 트러블슈팅 · 서비스 경계</td>
+</tr>
+</table>
 
 ## 프로젝트
 
 | 프로젝트 | 기간 · 인원 | 맡은 일 | 결과 |
 |---|---|---|---|
-| **[세잎지도](https://github.com/Safe-Way/safe-route)**<br>보행 약자 안전 길찾기 | 2026.10 ~ 11 · 4인 | 데이터 · DB · PO | 공공데이터 약 550만 건 → 안전 시설 10만여 곳을 길에 연결<br>현장 비교 불편 **세잎지도 0 · 카카오 8 · 네이버 10**<br>[발표 영상·자료](https://github.com/Safe-Way/safe-route/tree/main/docs/presentation) |
+| **[세잎지도](https://github.com/Safe-Way/safe-route)**<br>보행 약자 안전 길찾기 | 2026.10 ~ 11 · 4인 | 데이터 · DB | 공공데이터 약 550만 건 → 안전 시설 10만여 곳을 길에 연결<br>현장 비교 불편 **세잎지도 0 · 카카오 8 · 네이버 10**<br>[발표 영상·자료](https://github.com/Safe-Way/safe-route/tree/main/docs/presentation) |
 | **InsightOn**<br>IoT 센서 · 액추에이터 코어 | 2026.07 ~ 09 · 8인 | Core (Sensor · Actuator) | MQTT → Redis → InfluxDB 파이프라인, 커밋 후 이벤트 반영으로 롤백 시 불일치 해결, 공급사별 어댑터(전략 패턴) |
 | **[Mini Dooray](https://github.com/wognlrla/mini-dooray-gateway)**<br>팀 협업 관리 서비스 | 2026.05 · 5인 | Gateway (BFF) | Spring Security 세션 인증, Spring Session + Redis, 회원 데이터를 Account API로 위임해 서비스 경계 재설계 |
 
@@ -28,8 +35,23 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 - 국토지리정보원 인도 데이터를 길 60,586개에 붙여 휠체어가 인도 없는 골목을 피하게 함 (골목 340m → 9m)
 - 데이터 갱신 16단계를 명령 하나로 묶고, 끝나면 고아 참조 · 중복 · 표 줄 수를 자동 점검
 - 가짜 JDBC로 DB 없이 적재 코드를 테스트해 커버리지 46% → 96% (서버 전체 82.9% → 89.0%)
-- PO로 요구사항 · 결정 기록 59건 관리, GitHub Actions → Docker → 학교 서버 자동 배포
+- 요구사항 · 결정 기록 59건 관리, GitHub Actions → Docker → 학교 서버 자동 배포
 - 4명이 같은 코스를 각자 다른 앱으로 동시에 걸으며 녹화해 비교, 찾은 문제를 원인별로 나눠 고침 (5 → 2 → 0)
+
+</details>
+
+<details>
+<summary><b>InsightOn에서 한 일 자세히</b></summary>
+
+- Sensor · Actuator 도메인을 Controller → UseCase(인가 · 권한) → Service → Repository 계층으로 설계, CRUD · 검색 API
+- LoRaWAN 센서 데이터를 MQTT 패킷 파싱 → 센서 자동 등록 → Redis 최신값 → InfluxDB 시계열로 저장하는 파이프라인
+- 저장소 역할 분리: Redis 최신값 · MySQL 메타 · InfluxDB 시계열, 캐시 · RDB · 시계열 DB 3중 저장소 정합성 설계
+- 캐시를 먼저 갱신하면 DB 실패 시 불일치 → `@TransactionalEventListener(AFTER_COMMIT)`로 커밋 이후에만 캐시 · InfluxDB 반영
+- 실행 주체를 쿼리 파라미터로 받아 위장 가능 → 서버가 검증한 서비스 인증 헤더에서 호출 주체를 매핑
+- 액추에이터 명령 프리셋 · 값 검증, 실행 로그 설계, RabbitMQ로 룰엔진 이벤트 발행 · 그룹 기반 권한 검증
+- 공급사별 어댑터를 자동 등록하는 `ActuatorControlAdapterRegistry`(전략 패턴) → 새 공급사는 구현체 추가만, 값 변환 책임은 코어 한 곳에
+- Front · Core · Simulator 3개 서비스를 설계 · 구현, LG ThinQ · SmartThings를 모사한 시뮬레이터로 실기기 없이 통합 테스트
+- PR 리뷰 반영 리팩터링, SonarQube 커버리지 보완
 
 </details>
 
@@ -52,5 +74,5 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 
 ## 개인 프로젝트 · 연락
 
-- 💻 개인 프로젝트 모음: [wognlrla/portfolio](https://github.com/wognlrla/portfolio)
-- ✉️ wognlrla1@gmail.com
+- 개인 프로젝트 모음: [wognlrla/portfolio](https://github.com/wognlrla/portfolio)
+- wognlrla1@gmail.com
