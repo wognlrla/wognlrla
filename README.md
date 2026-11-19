@@ -20,6 +20,8 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 </tr>
 </table>
 
+**[이력서 · 자기소개서 (Word)](resume/이력서_자기소개서_김재휘.docx)**: 기술 스택 · 교육 · 프로젝트(세잎지도 · InsightOn · AI-fly-schedule · Mini Dooray) · 자기소개서
+
 ## 프로젝트
 
 | 프로젝트 | 기간 · 인원 | 맡은 일 | 결과 |
