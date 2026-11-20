@@ -67,13 +67,13 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 
 | 프로젝트 | 설명 | 기술 |
 |---|---|---|
-| **[R6 패치 추적기](https://r6-patch.pages.dev)**<br>저장소 비공개 · 2026.11 | 레인보우 식스 시즈 공식 패치노트를 모아 오퍼레이터 · 무기 · 가젯의 수치 변경 이력을 쌓는 서비스. robots.txt · 약관을 확인해 하루 두 번 · 10초 간격으로 천천히 수집하고, 이미 저장한 글은 다시 요청하지 않음(멱등), 차단 응답을 받으면 최대 7일까지 쉼. Spring AI 구조화 출력으로 (항목 · 이전 값 · 이후 값 · 시즌)을 뽑은 뒤 서버가 이름 목록 · 근거 문장 · 값 · 시즌을 대조해 검증하고, 실패한 줄은 버리지 않고 '확인 필요'로 남김. 항목별 시즌 타임라인 화면 · API, 정리본을 Cloudflare Pages에 자동 배포. 테스트 61개(H2 · 가짜 서버 · 가짜 LLM) | Java 21, Spring Boot 3.5, Spring AI 1.1 (Gemini · OpenAI), JPA, H2 · MySQL, jsoup, JUnit5, Cloudflare Pages |
-| **[블라인드 코너](https://claude.ai/artifact/NSwtNNgZnMxrBat4QgNFUk)**<br>[저장소](https://github.com/wognlrla/making-game) · 2026.10 | 위에서 내려다보지만 내가 바라보는 부채꼴(120°)만 보이는 2D 공격/수비 전술 슈터 웹 게임. 난이도별 AI 대전(5대5), 방 만들기 · 참여 멀티플레이, 판마다 새로 만들어지는 건물 맵 | TypeScript, Phaser 3, Vite, WebSocket(ws) |
-| **[헬다이버즈 작전 사령부](https://helldivers-ops.pages.dev)**<br>저장소 비공개 · 2026.11 | 친구들과 쓰는 헬다이버즈 2 로드아웃 도우미 웹앱. 장비 200여 개에 물량 · 장갑 · 대전차 · 저지력 · 원거리 · 철거 역할을 매겨 로드아웃의 빈틈(굴 닫기 담당 · 적별 대응 · 탄약 압박 · 방어구 패시브 실효)을 분석하고, 이유가 보이는 추천, 작전 모드별 무작위 로드아웃, 패치 근거를 단 티어 메이커, 위키 수치 기반 적 정보를 제공. Claude 아티팩트로 시작해 Cloudflare Pages로 옮기면서 Pages Functions + KV로 사용자별 서버 저장 · 쿠키로 자동 입장 · 기기 간 동기화를 붙이고 기존 데이터를 그대로 이관 | HTML · JavaScript, Cloudflare Pages · Functions · KV |
-| [hotel-reservation-system](https://github.com/wognlrla/portfolio/tree/main/hotel-reservation-system) | JWT 인증과 계층형 예외 처리를 적용한 호텔 객실 예약 REST API | Spring Boot 3, JPA, QueryDSL, JWT |
-| [fbp-engine](https://github.com/wognlrla/portfolio/tree/main/fbp-engine) | Flow-Based Programming 기반 Java 메시지 스트리밍 엔진 | Java 17, MQTT |
-| [iris-classifier](https://github.com/wognlrla/portfolio/tree/main/iris-classifier) | DL4J 다층 퍼셉트론을 Spring Boot에 붙인 붓꽃 품종 분류 웹서비스 | DL4J, Spring Boot |
-| [breakout-game](https://github.com/wognlrla/portfolio/tree/main/breakout-game) | JavaFX로 만든 벽돌깨기 게임 | Java, JavaFX |
+| **[R6 패치 추적기](https://r6-patch.pages.dev)**<br>저장소 비공개 · 2026.11 | • 레인보우 식스 시즈 공식 패치노트를 모아 오퍼레이터 · 무기 · 가젯의 수치 변경 이력을 쌓는 서비스<br>• robots.txt · 약관 확인 후 하루 두 번 · 10초 간격으로 수집, 저장한 글은 다시 요청하지 않음(멱등), 차단되면 최대 7일 쉼<br>• Spring AI 구조화 출력으로 (항목 · 이전 값 · 이후 값 · 시즌) 추출 → 서버가 이름 목록 · 근거 문장 · 값 · 시즌을 대조해 검증, 실패한 줄은 '확인 필요'로 보존<br>• 항목별 시즌 타임라인 화면 · API, 정리본을 Cloudflare Pages에 자동 배포<br>• 테스트 61개 (H2 · 가짜 서버 · 가짜 LLM) | Java 21, Spring Boot 3.5, Spring AI 1.1 (Gemini · OpenAI), JPA, H2 · MySQL, jsoup, JUnit5, Cloudflare Pages |
+| **[헬다이버즈 작전 사령부](https://helldivers-ops.pages.dev)**<br>저장소 비공개 · 2026.11 | • 친구들과 쓰는 헬다이버즈 2 로드아웃 도우미 웹앱<br>• 장비 200여 개에 물량 · 장갑 · 대전차 · 저지력 · 원거리 · 철거 역할 점수를 매겨 로드아웃의 빈틈 분석 (굴 닫기 담당 · 적별 대응 · 탄약 압박 · 방어구 패시브 실효)<br>• 점수 근거가 보이는 추천, 작전 모드별 무작위 로드아웃, 패치 근거를 단 티어 메이커, 위키 수치 기반 적 정보<br>• Claude 아티팩트 → Cloudflare Pages 이전: Pages Functions + KV로 사용자별 서버 저장 · 쿠키 자동 입장 · 기기 간 동기화, 기존 데이터 그대로 이관<br>• 여러 기기 동시 수정 시 지운 · 옮긴 슬롯이 되살아나던 병합 버그를 삭제 표시(tombstone)로 해결 | HTML · JavaScript, Cloudflare Pages · Functions · KV |
+| **[블라인드 코너](https://claude.ai/artifact/NSwtNNgZnMxrBat4QgNFUk)**<br>[저장소](https://github.com/wognlrla/making-game) · 2026.10 | • 위에서 내려다보지만 내가 바라보는 부채꼴(120°)만 보이는 2D 공격/수비 전술 슈터 웹 게임<br>• 난이도별 AI 대전 (5대5)<br>• 방 만들기 · 참여 멀티플레이<br>• 판마다 새로 만들어지는 건물 맵 | TypeScript, Phaser 3, Vite, WebSocket(ws) |
+| [hotel-reservation-system](https://github.com/wognlrla/portfolio/tree/main/hotel-reservation-system) | • 호텔 객실 예약 REST API<br>• JWT 인증, 계층형 예외 처리 | Spring Boot 3, JPA, QueryDSL, JWT |
+| [fbp-engine](https://github.com/wognlrla/portfolio/tree/main/fbp-engine) | • Flow-Based Programming 기반 Java 메시지 스트리밍 엔진<br>• MQTT 입출력 노드 | Java 17, MQTT |
+| [iris-classifier](https://github.com/wognlrla/portfolio/tree/main/iris-classifier) | • 붓꽃 품종 분류 웹서비스<br>• DL4J 다층 퍼셉트론을 Spring Boot에 연결 | DL4J, Spring Boot |
+| [breakout-game](https://github.com/wognlrla/portfolio/tree/main/breakout-game) | • JavaFX 벽돌깨기 게임 | Java, JavaFX |
 
 ## 기술 스택
 
