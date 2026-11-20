@@ -30,8 +30,8 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 |---|---|---|---|
 | **[세잎지도](https://github.com/Safe-Way/safe-route)**<br>보행 약자 안전 길찾기 | 2026.10 ~ 11 · 4인 | 데이터 · DB | 공공데이터 약 550만 건 → 안전 시설 10만여 곳을 길에 연결<br>현장 비교 불편 **세잎지도 0 · 카카오 8 · 네이버 10**<br>[발표 영상·자료](https://github.com/Safe-Way/safe-route/tree/main/docs/presentation) |
 | **[InsightOn](portfolio/backend-portfolio.pdf)**<br>IoT 센서 · 액추에이터 코어 | 2026.07 ~ 09 · 8인 | Core (Sensor · Actuator) | MQTT → Redis → InfluxDB 파이프라인, 커밋 후 이벤트 반영으로 롤백 시 불일치 해결, 공급사별 어댑터(전략 패턴) |
-| **[Mini Dooray](https://github.com/wognlrla/mini-dooray-gateway)**<br>팀 협업 관리 서비스 | 2026.05 · 5인 | Gateway (BFF) | Spring Security 세션 인증, Spring Session + Redis, 회원 데이터를 Account API로 위임해 서비스 경계 재설계 |
 | **[AI-fly-schedule](https://github.com/wognlrla/portfolio/tree/main/ai-fly-schedule)**<br>자연어 항공편 조회 | 2026.06 · 팀 | Multi-Agent · MCP Tool | 자연어 한 줄로 항공편 검색 · 필터 · 추천, 단일 프롬프트를 파싱 → 조회 → 필터 → 추천 Agent로 나눠 정확도 개선, MCP Tool 입출력 스키마를 정해 잘못된 도구 호출 해결 |
+| **[Mini Dooray](https://github.com/wognlrla/mini-dooray-gateway)**<br>팀 협업 관리 서비스 | 2026.05 · 5인 | Gateway (BFF) | Spring Security 세션 인증, Spring Session + Redis, 회원 데이터를 Account API로 위임해 서비스 경계 재설계 |
 
 **교육 과정 팀 실습 (team2)**: [MQTT 시계열 추론](https://github.com/wognlrla/MQTT-timeseries-inference) (교육장 센서 데이터 60분 예측 · 이상 탐지, Jetson 상시 추론) · [Jetson 멀티모달 임베딩](https://github.com/wognlrla/LLM-model) (EmbeddingGemma로 텍스트 · 이미지 · 영상 검색)
 
