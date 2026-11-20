@@ -24,11 +24,15 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 
 ## 프로젝트
 
+### 팀 프로젝트
+
 | 프로젝트 | 기간 · 인원 | 맡은 일 | 결과 |
 |---|---|---|---|
 | **[세잎지도](https://github.com/Safe-Way/safe-route)**<br>보행 약자 안전 길찾기 | 2026.10 ~ 11 · 4인 | 데이터 · DB | 공공데이터 약 550만 건 → 안전 시설 10만여 곳을 길에 연결<br>현장 비교 불편 **세잎지도 0 · 카카오 8 · 네이버 10**<br>[발표 영상·자료](https://github.com/Safe-Way/safe-route/tree/main/docs/presentation) |
 | **[InsightOn](portfolio/backend-portfolio.pdf)**<br>IoT 센서 · 액추에이터 코어 | 2026.07 ~ 09 · 8인 | Core (Sensor · Actuator) | MQTT → Redis → InfluxDB 파이프라인, 커밋 후 이벤트 반영으로 롤백 시 불일치 해결, 공급사별 어댑터(전략 패턴) |
 | **[Mini Dooray](https://github.com/wognlrla/mini-dooray-gateway)**<br>팀 협업 관리 서비스 | 2026.05 · 5인 | Gateway (BFF) | Spring Security 세션 인증, Spring Session + Redis, 회원 데이터를 Account API로 위임해 서비스 경계 재설계 |
+
+**교육 과정 팀 실습 (team2)**: [MQTT 시계열 추론](https://github.com/wognlrla/MQTT-timeseries-inference) (교육장 센서 데이터 60분 예측 · 이상 탐지, Jetson 상시 추론) · [Jetson 멀티모달 임베딩](https://github.com/wognlrla/LLM-model) (EmbeddingGemma로 텍스트 · 이미지 · 영상 검색)
 
 <details>
 <summary><b>세잎지도에서 한 일 자세히</b></summary>
@@ -57,6 +61,18 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 
 </details>
 
+### 개인 프로젝트
+
+| 프로젝트 | 설명 | 기술 |
+|---|---|---|
+| **[블라인드 코너](https://claude.ai/artifact/NSwtNNgZnMxrBat4QgNFUk)**<br>[저장소](https://github.com/wognlrla/making-game) · 2026.10 | 위에서 내려다보지만 내가 바라보는 부채꼴(90°)만 보이는 2D 공격/수비 전술 슈터 웹 게임. 난이도별 AI 대전(5대5), 방 만들기 · 참여 멀티플레이, 판마다 새로 만들어지는 건물 맵 | TypeScript, Phaser 3, Vite, WebSocket(ws) |
+| **[헬다이버즈 작전 사령부](https://claude.ai/artifact/LnkYXP8kAcBWVBfhdMqtzd)**<br>2026.11 | 헬다이버즈 2 로드아웃 도우미 웹앱. 장비마다 물량 · 장갑 · 대전차 · 철거 · 생존 역할을 매겨 내 로드아웃의 빈틈을 보여 주고, 무작위 로드아웃 · 티어 메이커 · 보유 장비 관리, 버튼 한 번으로 장비 데이터 최신화 | HTML · JavaScript, Claude Artifact(DB · 루틴 연동) |
+| [hotel-reservation-system](https://github.com/wognlrla/portfolio/tree/main/hotel-reservation-system) | JWT 인증과 계층형 예외 처리를 적용한 호텔 객실 예약 REST API | Spring Boot 3, JPA, QueryDSL, JWT |
+| [ai-fly-schedule](https://github.com/wognlrla/portfolio/tree/main/ai-fly-schedule) | 자연어 한 줄로 항공편을 검색 · 필터링 · 추천하는 Multi-Agent 서비스 | Spring AI, MCP |
+| [fbp-engine](https://github.com/wognlrla/portfolio/tree/main/fbp-engine) | Flow-Based Programming 기반 Java 메시지 스트리밍 엔진 | Java 17, MQTT |
+| [iris-classifier](https://github.com/wognlrla/portfolio/tree/main/iris-classifier) | DL4J 다층 퍼셉트론을 Spring Boot에 붙인 붓꽃 품종 분류 웹서비스 | DL4J, Spring Boot |
+| [breakout-game](https://github.com/wognlrla/portfolio/tree/main/breakout-game) | JavaFX로 만든 벽돌깨기 게임 | Java, JavaFX |
+
 ## 기술 스택
 
 | 구분 | 사용 |
@@ -73,20 +89,6 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 - 호남대학교 로봇드론공학과
 - NHN Academy 인공지능 기반 IoT 웹서비스 개발자 과정 (2025.12 ~ 2026.09)
 - 스마트그리드 기반 IoT융합 SW전문가과정 (2020.11 ~ 2021.03)
-
-## 개인 프로젝트
-
-| 프로젝트 | 설명 | 기술 |
-|---|---|---|
-| **[블라인드 코너](https://claude.ai/artifact/NSwtNNgZnMxrBat4QgNFUk)**<br>[저장소](https://github.com/wognlrla/making-game) · 2026.10 | 위에서 내려다보지만 내가 바라보는 부채꼴(90°)만 보이는 2D 공격/수비 전술 슈터 웹 게임. 난이도별 AI 대전(5대5), 방 만들기 · 참여 멀티플레이, 판마다 새로 만들어지는 건물 맵 | TypeScript, Phaser 3, Vite, WebSocket(ws) |
-| **[헬다이버즈 작전 사령부](https://claude.ai/artifact/LnkYXP8kAcBWVBfhdMqtzd)**<br>2026.11 | 헬다이버즈 2 로드아웃 도우미 웹앱. 장비마다 물량 · 장갑 · 대전차 · 철거 · 생존 역할을 매겨 내 로드아웃의 빈틈을 보여 주고, 무작위 로드아웃 · 티어 메이커 · 보유 장비 관리, 버튼 한 번으로 장비 데이터 최신화 | HTML · JavaScript, Claude Artifact(DB · 루틴 연동) |
-| [hotel-reservation-system](https://github.com/wognlrla/portfolio/tree/main/hotel-reservation-system) | JWT 인증과 계층형 예외 처리를 적용한 호텔 객실 예약 REST API | Spring Boot 3, JPA, QueryDSL, JWT |
-| [ai-fly-schedule](https://github.com/wognlrla/portfolio/tree/main/ai-fly-schedule) | 자연어 한 줄로 항공편을 검색 · 필터링 · 추천하는 Multi-Agent 서비스 | Spring AI, MCP |
-| [fbp-engine](https://github.com/wognlrla/portfolio/tree/main/fbp-engine) | Flow-Based Programming 기반 Java 메시지 스트리밍 엔진 | Java 17, MQTT |
-| [iris-classifier](https://github.com/wognlrla/portfolio/tree/main/iris-classifier) | DL4J 다층 퍼셉트론을 Spring Boot에 붙인 붓꽃 품종 분류 웹서비스 | DL4J, Spring Boot |
-| [breakout-game](https://github.com/wognlrla/portfolio/tree/main/breakout-game) | JavaFX로 만든 벽돌깨기 게임 | Java, JavaFX |
-
-**교육 과정 실습**: [MQTT 시계열 추론](https://github.com/wognlrla/MQTT-timeseries-inference) (교육장 센서 데이터 60분 예측 · 이상 탐지, Jetson 상시 추론) · [Jetson 멀티모달 임베딩](https://github.com/wognlrla/LLM-model) (EmbeddingGemma로 텍스트 · 이미지 · 영상 검색)
 
 ## 연락
 
