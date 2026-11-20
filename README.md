@@ -67,7 +67,7 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 | 프로젝트 | 설명 | 기술 |
 |---|---|---|
 | **[R6 패치 추적기](https://r6-patch.pages.dev)**<br>저장소 비공개 · 2026.11 | 레인보우 식스 시즈 공식 패치노트를 모아 오퍼레이터 · 무기 · 가젯의 수치 변경 이력을 쌓는 서비스. robots.txt · 약관을 확인해 하루 두 번 · 10초 간격으로 천천히 수집하고, 이미 저장한 글은 다시 요청하지 않음(멱등), 차단 응답을 받으면 최대 7일까지 쉼. Spring AI 구조화 출력으로 (항목 · 이전 값 · 이후 값 · 시즌)을 뽑은 뒤 서버가 이름 목록 · 근거 문장 · 값 · 시즌을 대조해 검증하고, 실패한 줄은 버리지 않고 '확인 필요'로 남김. 항목별 시즌 타임라인 화면 · API, 정리본을 Cloudflare Pages에 자동 배포. 테스트 61개(H2 · 가짜 서버 · 가짜 LLM) | Java 21, Spring Boot 3.5, Spring AI 1.1 (Gemini · OpenAI), JPA, H2 · MySQL, jsoup, JUnit5, Cloudflare Pages |
-| **[블라인드 코너](https://claude.ai/artifact/NSwtNNgZnMxrBat4QgNFUk)**<br>[저장소](https://github.com/wognlrla/making-game) · 2026.10 | 위에서 내려다보지만 내가 바라보는 부채꼴(90°)만 보이는 2D 공격/수비 전술 슈터 웹 게임. 난이도별 AI 대전(5대5), 방 만들기 · 참여 멀티플레이, 판마다 새로 만들어지는 건물 맵 | TypeScript, Phaser 3, Vite, WebSocket(ws) |
+| **[블라인드 코너](https://claude.ai/artifact/NSwtNNgZnMxrBat4QgNFUk)**<br>[저장소](https://github.com/wognlrla/making-game) · 2026.10 | 위에서 내려다보지만 내가 바라보는 부채꼴(120°)만 보이는 2D 공격/수비 전술 슈터 웹 게임. 난이도별 AI 대전(5대5), 방 만들기 · 참여 멀티플레이, 판마다 새로 만들어지는 건물 맵 | TypeScript, Phaser 3, Vite, WebSocket(ws) |
 | **[헬다이버즈 작전 사령부](https://claude.ai/artifact/LnkYXP8kAcBWVBfhdMqtzd)**<br>2026.11 | 헬다이버즈 2 로드아웃 도우미 웹앱. 장비마다 물량 · 장갑 · 대전차 · 철거 · 생존 역할을 매겨 내 로드아웃의 빈틈을 보여 주고, 무작위 로드아웃 · 티어 메이커 · 보유 장비 관리, 버튼 한 번으로 장비 데이터 최신화 | HTML · JavaScript, Claude Artifact(DB · 루틴 연동) |
 | [hotel-reservation-system](https://github.com/wognlrla/portfolio/tree/main/hotel-reservation-system) | JWT 인증과 계층형 예외 처리를 적용한 호텔 객실 예약 REST API | Spring Boot 3, JPA, QueryDSL, JWT |
 | [fbp-engine](https://github.com/wognlrla/portfolio/tree/main/fbp-engine) | Flow-Based Programming 기반 Java 메시지 스트리밍 엔진 | Java 17, MQTT |
