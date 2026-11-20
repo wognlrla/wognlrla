@@ -6,6 +6,7 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 - **함께 만드는 사람**: 팀의 서비스 경계와 API 규격을 먼저 맞추고, 결정은 문서로 남깁니다.
 - **새 기술을 두려워하지 않는 사람**: MQTT · DL4J · Spring AI(MCP) · 공간 DB까지, 필요하면 바로 배워 씁니다.
 - **마감 안에 완성하는 사람**: 리뷰할 수 있는 단위로 PR을 나눠 정해진 시간 안에 끝냅니다.
+- **직접 띄워서 쓰게 만드는 사람**: 서버에서 끝내지 않고 화면과 배포까지 붙여, 다른 사람이 주소 하나로 바로 써 볼 수 있게 만듭니다. (R6 패치 추적기 화면 · 고정 주소 정리본, 블라인드 코너 웹 게임, 헬다이버즈 작전 사령부)
 
 ## 포트폴리오
 
@@ -81,7 +82,8 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 | Backend | Java, Spring Boot, Spring Security, JPA, QueryDSL, Spring AI (MCP) |
 | Database | MySQL (공간 인덱스), Redis, InfluxDB, H2 |
 | IoT · MQ | MQTT (Paho · LoRaWAN), RabbitMQ, Node-RED, DL4J |
-| Data · DevOps | Python, OpenStreetMap, GitHub Actions, Docker |
+| Frontend · Web | TypeScript, HTML · CSS · JavaScript, Thymeleaf, Phaser 3, Vite, WebSocket |
+| Data · DevOps | Python, OpenStreetMap, GitHub Actions, Docker, Cloudflare Pages |
 | Tools | Git · GitHub, JUnit5, SonarQube, IntelliJ, Maven |
 
 ## 학력 · 교육
