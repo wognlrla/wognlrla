@@ -71,7 +71,7 @@ Java · Spring Boot로 서버를 만들고, 데이터가 서비스 안에서 끝
 | **[헬다이버즈 작전 사령부](https://helldivers-ops.pages.dev)**<br>저장소 비공개 · 2026.11 | • 친구들과 쓰는 헬다이버즈 2 로드아웃 도우미 웹앱<br>• 장비 200여 개에 물량 · 장갑 · 대전차 · 저지력 · 원거리 · 철거 역할 점수를 매겨 로드아웃의 빈틈 분석 (굴 닫기 담당 · 적별 대응 · 탄약 압박 · 방어구 패시브 실효)<br>• 점수 근거가 보이는 추천, 작전 모드별 무작위 로드아웃, 패치 근거를 단 티어 메이커, 위키 수치 기반 적 정보<br>• Claude 아티팩트 → Cloudflare Pages 이전: Pages Functions + KV로 사용자별 서버 저장 · 쿠키 자동 입장 · 기기 간 동기화, 기존 데이터 그대로 이관<br>• 여러 기기 동시 수정 시 지운 · 옮긴 슬롯이 되살아나던 병합 버그를 삭제 표시(tombstone)로 해결 | HTML · JavaScript, Cloudflare Pages · Functions · KV |
 | **[블라인드 코너](https://claude.ai/artifact/NSwtNNgZnMxrBat4QgNFUk)**<br>[저장소](https://github.com/wognlrla/making-game) · 2026.10 | • 위에서 내려다보지만 내가 바라보는 부채꼴(120°)만 보이는 2D 공격/수비 전술 슈터 웹 게임<br>• 난이도별 AI 대전 (5대5)<br>• 방 만들기 · 참여 멀티플레이<br>• 판마다 새로 만들어지는 건물 맵 | TypeScript, Phaser 3, Vite, WebSocket(ws) |
 | [hotel-reservation-system](https://github.com/wognlrla/portfolio/tree/main/hotel-reservation-system) | • 호텔 객실 예약 REST API<br>• JWT 인증, 계층형 예외 처리 | Spring Boot 3, JPA, QueryDSL, JWT |
-| [fbp-engine](https://github.com/wognlrla/portfolio/tree/main/fbp-engine) | • Flow-Based Programming 기반 Java 메시지 스트리밍 엔진<br>• MQTT 입출력 노드 | Java 17, MQTT |
+| [fbp-engine](https://github.com/wognlrla/portfolio/tree/main/fbp-engine) | • Flow-Based Programming 기반 Java 메시지 스트리밍 엔진 | Java 17, MQTT |
 | [iris-classifier](https://github.com/wognlrla/portfolio/tree/main/iris-classifier) | • 붓꽃 품종 분류 웹서비스<br>• DL4J 다층 퍼셉트론을 Spring Boot에 연결 | DL4J, Spring Boot |
 | [breakout-game](https://github.com/wognlrla/portfolio/tree/main/breakout-game) | • JavaFX 벽돌깨기 게임 | Java, JavaFX |
 
